@@ -1,0 +1,24 @@
+# Obsidian
+.obsidian/
+.DS_Store
+
+# Docker
+.env
+.env.local
+
+# Sistema
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
