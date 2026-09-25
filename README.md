@@ -74,8 +74,6 @@ Confirma que `mistral-nemo` aparece en la lista — es el modelo que Local GPT v
 3. Completa los checkbox `- [ ]` de pasos
 4. Cuando termines → mueve la nota a `03-Completado-Archivo/`
 
-### Fin de semana: Reflexión
-Abre `Sistema/Bitacora-Analogias.md` y añade tus observaciones en cada sección. ¿Cómo cada concepto de SO se manifestó en tu uso real?
 
 ---
 
