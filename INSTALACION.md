@@ -6,7 +6,7 @@ Tu sistema personal de gestión de tareas con IA local, basado en Obsidian + Oll
 
 ## 📋 Requisitos Previos
 
-- **Docker** (descarga desde https://www.docker.com/products/docker-desktop)
+- **Ollama** (descarga desde https://ollama.com) **o** Docker (descarga desde https://www.docker.com/products/docker-desktop) — solo necesitas uno de los dos
 - **Obsidian** (descarga desde https://obsidian.md) — O usa el AppImage si estás en Linux
 - **4GB RAM mínimo** (recomendado 8GB)
 - **2GB disco libre** para el modelo de IA
@@ -19,13 +19,14 @@ Tu sistema personal de gestión de tareas con IA local, basado en Obsidian + Oll
 
 ```bash
 cd /ruta/a/SegundoCerebro
+chmod +x SETUP.sh   # solo si el script no viene marcado como ejecutable
 ./SETUP.sh
 ```
 
-Esto va a:
-- ✅ Iniciar Docker
-- ✅ Descargar el modelo `mistral-nemo` (5-10 minutos la primera vez)
-- ✅ Verificar que todo funciona
+El script detecta automáticamente tu situación:
+- ✅ Si ya tienes **Ollama instalado nativamente**, lo usa directamente y descarga el modelo ahí (sin tocar Docker)
+- ✅ Si no tienes Ollama, usa **Docker** como respaldo y lo levanta en un contenedor
+- ✅ Descarga el modelo `mistral-nemo` (5-10 minutos la primera vez)
 
 ### Paso 2: Abrir el Vault en Obsidian
 
