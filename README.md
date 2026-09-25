@@ -103,10 +103,3 @@ Abre `Sistema/Bitacora-Analogias.md` y añade tus observaciones en cada sección
 - Cuando Obsidian inicie, busca "Open vault from folder"
 - Selecciona `~/Documentos/SegundoCerebro/`
 
----
-
-## 🎓 Reflexión Final
-
-Este proyecto te pide que veas conceptos de SO no como teoría, sino como realidad en tu propio sistema. **La sección más importante es la Bitácora**, cuando después de usar el sistema durante 3-4 semanas, describas con sinceridad cómo se manifestó cada concepto.
-
-**Buena suerte — ¡y que sea útil no solo para la nota, sino para tu vida! 🧠**
