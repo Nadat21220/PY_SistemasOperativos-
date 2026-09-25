@@ -1,26 +1,7 @@
 # 🧠 Segundo Cerebro — Tu Sistema de Gestión de Tareas & Pendientes
 
 **Proyecto escolar:** Simular conceptos de Sistemas Operativos usando una base de conocimiento personal (Obsidian + IA local).
-
-**Entrega:** 3 de noviembre de 2026
-
----
-
-## 📁 Estructura del Vault
-
-```
-SegundoCerebro/
-├── 00-Bandeja-Entrada/       # 📥 I/O: nuevos pendientes sin procesar
-├── 01-En-Proceso/            # ⚙️  RAM: tareas que estás haciendo AHORA
-├── 02-Cola-Pendientes/       # 📋 Scheduler: tareas esperando turno
-├── 03-Completado-Archivo/    # 💾 Disco: historial de tareas completadas
-└── Sistema/
-    ├── Templates/
-    │   └── Pendiente.md       # Plantilla para crear tareas (Templater)
-    ├── Definicion-Problema.md # Tu reflexión personal (DEBES COMPLETAR)
-    ├── Bitacora-Analogias.md  # Análisis SO ↔ tu sistema (DEBES COMPLETAR)
-    └── README.md              # Este archivo
-```
+**Autores:** Diego Castillo Mota y Anthony Poot.
 
 ---
 
@@ -39,9 +20,7 @@ Abre `Sistema/Definicion-Problema.md` y responde las 3 preguntas en tu propio co
 
 ### 3. Levantar Ollama (OBLIGATORIO para Local GPT)
 ```bash
-cd ~/Documentos/Repositorios/MacroagenteMAF-MCP-
-docker compose up -d ollama_service
-curl -s http://localhost:11434/api/tags | grep mistral-nemo
+Es indispensable para el correcto funcionamiento del sistema instalar Ollama , En caso de no tenerlo localmente, puides optar por installar docker y el skrip se encargara en desplegar una imagen de Ollama con el modelo por defect.
 ```
 Confirma que `mistral-nemo` aparece en la lista — es el modelo que Local GPT va a usar.
 
@@ -69,11 +48,14 @@ Confirma que `mistral-nemo` aparece en la lista — es el modelo que Local GPT v
    - En configuración:
      - API URL: `http://localhost:11434`
      - Modelo: `mistral-nemo`
-   - Ahora puedes seleccionar texto en cualquier nota y usar Ctrl+Shift+L → "Summarize" o "Extract Tags"
+   - Ahora puedes seleccionar texto en cualquier nota y usar Ctrl + P → "Summarize" o "Extract Tags"
+   - Instalar: Ai Providers. ( Requisito Minimo para ejecutar Local GPT )
 
 ---
 
 ## 📝 Flujo de Uso Diario
+
+### **Importante** en la secion 00 precionar Cntol + E para buecar 'Sistema/Templates/Pendiente' para crear la plantilla.
 
 ### Mañana: Revisar la cola
 1. Abre `02-Cola-Pendientes/INDEX-Cola-Pendientes.md`
@@ -94,30 +76,6 @@ Confirma que `mistral-nemo` aparece en la lista — es el modelo que Local GPT v
 
 ### Fin de semana: Reflexión
 Abre `Sistema/Bitacora-Analogias.md` y añade tus observaciones en cada sección. ¿Cómo cada concepto de SO se manifestó en tu uso real?
-
----
-
-## 🎯 Entregas de la Tarea
-
-### Entrada 1: Definición del Problema
-**Archivo:** `Sistema/Definicion-Problema.md`
-**Estado:** 📝 DEBES COMPLETAR AHORA (media página, tus propias palabras)
-
-### Entrada 2: Sistema Funcional
-**Carpetas:** Todo lo que ves arriba, estructurado y funcionando con plugins
-**Estado:** ✅ LISTO (carpetas creadas, plugins por instalar desde Obsidian)
-
-### Entrada 3: Bitácora de Analogías
-**Archivo:** `Sistema/Bitacora-Analogias.md`
-**Estado:** 📝 DEBES COMPLETAR CONFORME USES (después de 1-2 semanas de uso real)
-- Llena cada sección explicando cómo viviste ese concepto
-- La sección final es la más importante para la nota (40% de la rúbrica)
-
-### Entrada 4: Demostración en Clase
-**Qué traes:** Tu vault con datos REALES (no de prueba)
-- Muestra la cola de pendientes con tus tareas reales
-- Usa Local GPT en vivo para resumir algo
-- Explica una conexión que viste entre dos ideas (wikilinks)
 
 ---
 
